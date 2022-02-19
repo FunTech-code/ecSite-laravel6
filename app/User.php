@@ -16,7 +16,15 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'name_kana',
+        'email',
+        'tell',
+        'postal_code',
+        'prefectures',
+        'municipalities',
+        'address_details',
+        'password',
     ];
 
     /**
@@ -36,4 +44,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    // protected $primaryKey = 'user_id';
+    // protected $table = 'user';
 }
+
+
+
+
+
+
